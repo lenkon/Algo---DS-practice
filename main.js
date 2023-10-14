@@ -1,27 +1,35 @@
-const readline = require('readline');
+import { createInterface } from 'readline';
 
-const rl = readline.createInterface({
+const rl = createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-function reverse_string(str) {
+const reverse_string = (str) => {
   return str.split('').reverse().join('');
 }
 
+// console.log(process.argv);
+// console.log(process.argv[2]);
+// console.log(process.cwd());
+
 console.log("Welcome to the Algo & DS App!\n1. Reverse string\n2. Calculate factorial");
 
-rl.question('Select an option- ', (option) => {
-  console.log(`Selected option: ${option}!`); 
+rl.question('Select an option from above: ', (option) => {
+  if (option) {
+    console.log(`Selected option: ${option}!`);
+    
+    if (option === '1') {
+      const ret = reverse_string("Hello");
+      console.log(`Reversed string: ${ret}`);
+    } else {
+      console.log('Invalid option.');
+    }
 
-  if (option === '1') {
-    const ret = reverse_string("Hello");
-    console.log(`Reversed string: ${ret}`);
+    rl.close();
   } else {
-    console.log('Invalid option.');
+    console.log('Error reading input.');
   }
-
-  rl.close();
 });
 
 // Handle the close event
