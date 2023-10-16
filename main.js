@@ -1,5 +1,6 @@
 import { createInterface } from 'readline';
 import { bracketMatch } from './simple-bracket-check.js';
+import { squareRoot } from './algos/square_root.js';
 import { factorial } from './factorial.js';
 
 const rl = createInterface({
@@ -22,23 +23,20 @@ const exit = () => {
 // console.log(process.argv[2]);
 // console.log(process.cwd());
 
-// console.log("Welcome to the Algo & DS App!\n");
-// console.log("1. Reverse string");
-// console.log("2. Simple bracket check");
-// console.log("3. Calculate factorial");
-
 function run() {
   console.log("Welcome to the Algo & DS App!\n");
   console.log("1 - Reverse string");
   console.log("2 - Simple bracket check");
-  console.log("3 - Calculate factorial");
+  console.log("3 - Square root");
+  console.log("4 - Calculate factorial");  
   console.log('10 - Exit');
 }
 
 const OPTIONS = {
   1: reverse_string,
   2: bracketMatch,
-  3: factorial,  
+  3: squareRoot,  
+  4: factorial,
   10: exit
 };
 
@@ -66,13 +64,6 @@ rl.question('Select an option from above: ', (option) => {
     console.log(`Selected option: ${option}!`);
     
     run_option(option);
-    // if (option === '1') {
-    //   const ret = reverse_string("Hello");
-    //   console.log(`Reversed string: ${ret}`);
-    // } else {
-    //   console.log('Invalid option.');
-    // }
-
     rl.close();
   } else {
     console.log('Invalid input. Please enter a number.');
