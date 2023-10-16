@@ -20,3 +20,22 @@ export function bracketMatch() {
   // return (stack.length == 0);
   console.log((stack.length == 0));
 }
+
+// Given a string that consists of brackets, write a function bracketMatch that takes a bracket string as an input and returns the minimum number of brackets you’d need to add to the input in order to make it correctly matched.
+// function bracketMatch(text) {
+//   // your code goes here
+//   let openCount = 0;
+//   let closeCount = 0;
+  
+//   for (let i=0; i<text.length; i++) {
+//     if (text[i] === "(") {
+//       openCount++;
+//     }
+//     else {
+//       if (openCount > 0) openCount--;
+//       else closeCount++;
+      
+//     }
+//   }
+//   return openCount + closeCount;
+// }
