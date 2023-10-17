@@ -2,6 +2,7 @@ import { createInterface } from 'readline';
 import { bracketMatch } from './simple-bracket-check.js';
 import { squareRoot } from './algos/square_root.js';
 import { factorial } from './factorial.js';
+import { nth_square_root } from './algos/nth_square_root.js';
 
 const rl = createInterface({
   input: process.stdin,
@@ -28,7 +29,8 @@ function run() {
   console.log("1 - Reverse string");
   console.log("2 - Simple bracket check");
   console.log("3 - Square root");
-  console.log("4 - Calculate factorial");  
+  console.log("4 - Nth square root"); 
+  console.log("5 - Calculate factorial"); 
   console.log('10 - Exit');
 }
 
@@ -36,7 +38,8 @@ const OPTIONS = {
   1: reverse_string,
   2: bracketMatch,
   3: squareRoot,  
-  4: factorial,
+  4: nth_square_root,
+  5: factorial,
   10: exit
 };
 
