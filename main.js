@@ -1,4 +1,5 @@
 import { createInterface } from 'readline';
+import { reverseString } from './reverse_string.js';
 import { bracketMatch } from './simple-bracket-check.js';
 import { squareRoot } from './algos/square_root.js';
 import { factorial } from './factorial.js';
@@ -8,12 +9,6 @@ const rl = createInterface({
   input: process.stdin,
   output: process.stdout
 });
-
-const reverse_string = () => {
-  let str = "hello";
-  // return str.split('').reverse().join('');
-  console.log(str.split('').reverse().join(''));
-}
 
 const exit = () => {
   console.log('Thank you for using the Sample Console App!');
@@ -35,7 +30,7 @@ function run() {
 }
 
 const OPTIONS = {
-  1: reverse_string,
+  1: reverseString,
   2: bracketMatch,
   3: squareRoot,  
   4: nth_square_root,
