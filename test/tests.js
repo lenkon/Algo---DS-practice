@@ -1,5 +1,5 @@
 const assert = require('assert');
-const reverseString = require('../reverse_string.js');
+const reverseString = require('../algos/reverse_string.js');
 
 describe('Tests', function () {
   it('reverseString() should return a string.', function () {

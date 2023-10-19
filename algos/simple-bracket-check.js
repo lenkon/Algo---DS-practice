@@ -1,4 +1,4 @@
-export function bracketMatch() {
+module.exports = function bracketMatch() {
   let text = "(())";
   let arr = text.split('');
   let stack = [];
