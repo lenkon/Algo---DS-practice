@@ -1,11 +1,11 @@
-import { createInterface } from 'readline';
-import { reverseString } from './reverse_string.js';
-import { bracketMatch } from './simple-bracket-check.js';
-import { squareRoot } from './algos/square_root.js';
-import { factorial } from './factorial.js';
-import { nth_square_root } from './algos/nth_square_root.js';
+const readline = require('readline');
+const { reverseString } = require('./reverse_string');
+const { bracketMatch } = require('./simple-bracket-check');
+const { squareRoot } = require('./algos/square_root');
+const { factorial } = require('./factorial');
+const { nth_square_root } = require('./algos/nth_square_root');
 
-const rl = createInterface({
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
@@ -15,24 +15,20 @@ const exit = () => {
   process.exit(0);
 };
 
-// console.log(process.argv);
-// console.log(process.argv[2]);
-// console.log(process.cwd());
-
 function run() {
   console.log("Welcome to the Algo & DS App!\n");
   console.log("1 - Reverse string");
   console.log("2 - Simple bracket check");
   console.log("3 - Square root");
-  console.log("4 - Nth square root"); 
-  console.log("5 - Calculate factorial"); 
+  console.log("4 - Nth square root");
+  console.log("5 - Calculate factorial");
   console.log('10 - Exit');
 }
 
 const OPTIONS = {
   1: reverseString,
   2: bracketMatch,
-  3: squareRoot,  
+  3: squareRoot,
   4: nth_square_root,
   5: factorial,
   10: exit
@@ -53,14 +49,14 @@ function run_option(option) {
   }
 }
 
-run(); 
+run();
 
 rl.question('Select an option from above: ', (option) => {
   option = parseInt(option);
 
   if (!isNaN(option)) {
     console.log(`Selected option: ${option}!`);
-    
+
     run_option(option);
     rl.close();
   } else {
@@ -73,4 +69,3 @@ rl.on('close', () => {
   console.log('Thank you for using the Sample Console App!');
   process.exit(0);
 });
-
