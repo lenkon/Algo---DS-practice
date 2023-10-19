@@ -1,4 +1,4 @@
-export function squareRoot() {
+module.exports = function squareRoot() {
   let x = 8;
   let n = 2;
 

@@ -1,4 +1,4 @@
-export function nth_square_root() {
+module.exports = function nth_square_root() {
   let x = 16;
   let n = 4;
 
