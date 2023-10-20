@@ -20,6 +20,7 @@ module.exports = function squareRoot() {
     guess = nextGuess;
   }
   console.log("Square root: ", ret);
+  return ret;
 }
 
 function manualPower(base, exponent) {
