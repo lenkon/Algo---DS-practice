@@ -14,10 +14,10 @@ describe('reverseString test', function () {
 
 describe('squareRoot test', function () {
   it('squareRoot() should return a number.', function () {
-    assert(typeof squareRoot() === 'number');
+    assert(typeof squareRoot() === 'number')
   });
 
-  it('squareRoot() should return olleh.', function () {
-    assert(squareRoot() === '2.828');
+  it('squareRoot() should return 2.828', function () {
+    assert(squareRoot() === 2.828);
   });
 });
