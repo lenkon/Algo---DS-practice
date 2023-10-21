@@ -11,8 +11,9 @@ module.exports = function nth_square_root() {
 
     if (Math.abs(nextGuess - guess) < 0.001) {
       console.log(nextGuess.toFixed(3));
+      return nextGuess;
       break;
     } 
     guess = nextGuess;
-  }
+  }  
 }
