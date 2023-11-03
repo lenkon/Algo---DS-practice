@@ -4,6 +4,7 @@
   const squareRoot = require('./algos/square_root');
   const factorial = require('./algos/factorial');
   const nth_square_root = require('./algos/nth_square_root');
+  const booWho = require('./algos/boo-who');
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -22,6 +23,7 @@
     console.log("3 - Square root");
     console.log("4 - Nth square root");
     console.log("5 - Calculate factorial");
+    console.log("6 - Check boo-who");
     console.log('10 - Exit');
   }
 
@@ -31,6 +33,7 @@
     3: squareRoot,
     4: nth_square_root,
     5: factorial,
+    6: booWho,
     10: exit
   };
 
