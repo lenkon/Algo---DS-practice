@@ -5,6 +5,7 @@
   const factorial = require('./algos/factorial');
   const nth_square_root = require('./algos/nth_square_root');
   const booWho = require('./algos/boo-who');
+  const balancedBrackets = require('./algos/balanced-brackets');
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -24,6 +25,7 @@
     console.log("4 - Nth square root");
     console.log("5 - Calculate factorial");
     console.log("6 - Check boo-who");
+    console.log("7 - Check balance brackets");
     console.log('10 - Exit');
   }
 
@@ -34,6 +36,7 @@
     4: nth_square_root,
     5: factorial,
     6: booWho,
+    7: balancedBrackets,
     10: exit
   };
 
