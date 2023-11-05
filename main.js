@@ -6,6 +6,7 @@
   const nth_square_root = require('./algos/nth_square_root');
   const booWho = require('./algos/boo-who');
   const balancedBrackets = require('./algos/balanced-brackets');
+  const convertsecondstocompound = require('./algos/convert-seconds-to-compound-duration')
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -26,6 +27,7 @@
     console.log("5 - Calculate factorial");
     console.log("6 - Check boo-who");
     console.log("7 - Check balance brackets");
+    console.log("8 - Convert seconds to compound duration");
     console.log('10 - Exit');
   }
 
@@ -37,6 +39,7 @@
     5: factorial,
     6: booWho,
     7: balancedBrackets,
+    8: convertsecondstocompound,
     10: exit
   };
 
