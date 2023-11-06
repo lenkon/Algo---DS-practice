@@ -6,7 +6,8 @@
   const nth_square_root = require('./algos/nth_square_root');
   const booWho = require('./algos/boo-who');
   const balancedBrackets = require('./algos/balanced-brackets');
-  const convertsecondstocompound = require('./algos/convert-seconds-to-compound-duration')
+  const convertsecondstocompound = require('./algos/convert-seconds-to-compound-duration');
+  const findLongestWord = require('./algos/find-the-longest-word-in-a-string');
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -28,6 +29,7 @@
     console.log("6 - Check boo-who");
     console.log("7 - Check balance brackets");
     console.log("8 - Convert seconds to compound duration");
+    console.log("9 - Longest word in a string");
     console.log('10 - Exit');
   }
 
@@ -40,6 +42,7 @@
     6: booWho,
     7: balancedBrackets,
     8: convertsecondstocompound,
+    9: findLongestWord,
     10: exit
   };
 
