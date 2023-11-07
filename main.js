@@ -8,6 +8,7 @@
   const balancedBrackets = require('./algos/balanced-brackets');
   const convertsecondstocompound = require('./algos/convert-seconds-to-compound-duration');
   const findLongestWord = require('./algos/find-the-longest-word-in-a-string');
+  const falsyBouncer = require('./algos/falsy-bouncer')
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -30,7 +31,8 @@
     console.log("7 - Check balance brackets");
     console.log("8 - Convert seconds to compound duration");
     console.log("9 - Longest word in a string");
-    console.log('10 - Exit');
+    console.log("10 - Falsy Bouncer");
+    console.log('15 - Exit');
   }
 
   const OPTIONS = {
@@ -43,7 +45,8 @@
     7: balancedBrackets,
     8: convertsecondstocompound,
     9: findLongestWord,
-    10: exit
+    10: falsyBouncer,
+    15: exit
   };
 
   Object.freeze(OPTIONS);
