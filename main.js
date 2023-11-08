@@ -8,8 +8,9 @@
   const balancedBrackets = require('./algos/balanced-brackets');
   const convertsecondstocompound = require('./algos/convert-seconds-to-compound-duration');
   const findLongestWord = require('./algos/find-the-longest-word-in-a-string');
-  const falsyBouncer = require('./algos/falsy-bouncer')
-
+  const falsyBouncer = require('./algos/falsy-bouncer');
+  const happyNumbers = require('./algos/happy-numbers.js');
+  
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -32,6 +33,7 @@
     console.log("8 - Convert seconds to compound duration");
     console.log("9 - Longest word in a string");
     console.log("10 - Falsy Bouncer");
+    console.log("11 - Happy Numbers");
     console.log('15 - Exit');
   }
 
@@ -46,6 +48,7 @@
     8: convertsecondstocompound,
     9: findLongestWord,
     10: falsyBouncer,
+    11: happyNumbers,
     15: exit
   };
 
