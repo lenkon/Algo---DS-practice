@@ -10,8 +10,9 @@
   const findLongestWord = require('./algos/find-the-longest-word-in-a-string');
   const falsyBouncer = require('./algos/falsy-bouncer');
   const happyNumbers = require('./algos/happy-numbers.js');
-  const romanConverter = require('./algos/roman-numeral-converter')
-
+  const romanConverter = require('./algos/roman-numeral-converter');
+  const findDuplicates = require('./algos/sets-basic');
+  
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -36,7 +37,8 @@
     console.log("10 - Falsy Bouncer");
     console.log("11 - Happy Numbers");
     console.log("12 - Roman Numerical Converter");
-    console.log('15 - Exit');
+    console.log("13 - Find Duplicate numbers");
+      console.log('15 - Exit');
   }
 
   const OPTIONS = {
@@ -52,6 +54,7 @@
     10: falsyBouncer,
     11: happyNumbers,
     12: romanConverter,
+    13: findDuplicates,
     15: exit
   };
 
