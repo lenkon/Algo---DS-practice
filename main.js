@@ -12,6 +12,7 @@
   const happyNumbers = require('./algos/happy-numbers.js');
   const romanConverter = require('./algos/roman-numeral-converter');
   const findDuplicates = require('./algos/sets-basic');
+  const quickSort = require ('./algos/quickSort')
   
   const rl = readline.createInterface({
     input: process.stdin,
@@ -55,6 +56,7 @@
     11: happyNumbers,
     12: romanConverter,
     13: findDuplicates,
+    14: quickSort,
     15: exit
   };
 
