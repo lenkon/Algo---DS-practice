@@ -12,7 +12,8 @@
   const happyNumbers = require('./algos/happy-numbers.js');
   const romanConverter = require('./algos/roman-numeral-converter');
   const findDuplicates = require('./algos/sets-basic');
-  const quickSort = require ('./algos/quickSort')
+  const quickSort = require ('./algos/quickSort');
+const noRepeatsPlease = require('./algos/no-repeats-please.js');
   
   const rl = readline.createInterface({
     input: process.stdin,
@@ -39,7 +40,7 @@
     console.log("11 - Happy Numbers");
     console.log("12 - Roman Numerical Converter");
     console.log("13 - Find Duplicate numbers");
-      console.log('15 - Exit');
+    console.log('20 - Exit');
   }
 
   const OPTIONS = {
@@ -57,7 +58,8 @@
     12: romanConverter,
     13: findDuplicates,
     14: quickSort,
-    15: exit
+    15: noRepeatsPlease,
+    20: exit
   };
 
   Object.freeze(OPTIONS);
