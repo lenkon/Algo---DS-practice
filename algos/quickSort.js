@@ -16,7 +16,8 @@
 // => [3, 1, 4, 5, 9]
 
 
-function partition(array) {
+module.exports = function (array) {
+  array = [4, 5, 3, 9, 1];
   const pivot = array[0];
   const left = [];
   const right = [];
@@ -28,10 +29,10 @@ function partition(array) {
       right.push(array[i]);
     }
   }
-  
+  console.log(left.concat([pivot]).concat(right));
   return left.concat([pivot]).concat(right);
 }
 
-console.log(partition([4, 5, 3, 9, 1]));
+// console.log(partition([4, 5, 3, 9, 1]));
 //  Output: [3, 1, 4, 5, 9]
 
