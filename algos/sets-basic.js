@@ -1,4 +1,5 @@
-function findDuplicates(array) {
+// function findDuplicates(array) {
+module.exports = function(array) {
   array = [4376, -345, -345, 4376, -345, 84945, 4376, -345, -26509];
   // write your code here
   let set = new Set();
@@ -21,4 +22,4 @@ function findDuplicates(array) {
 // console.log(findDuplicates([3, 501, 17, 23, -43, 67, 5, 888, -402, 235, 77, 99, 311, 1, -43]))
 // => [-43]
 
-module.exports = findDuplicates
+// module.exports = findDuplicates
