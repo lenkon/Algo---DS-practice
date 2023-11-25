@@ -13,8 +13,8 @@
   const romanConverter = require('./algos/roman-numeral-converter');
   const findDuplicates = require('./algos/sets-basic');
   const quickSort = require ('./algos/quickSort');
+  const largestInt = require('./algos/largest-int-from-concatenated-ints');
   const noRepeatsPlease = require('./algos/no-repeats-please.js');
-  const largestInt = require('/algos/largest-int-from-concatenated-ints')
   
   const rl = readline.createInterface({
     input: process.stdin,
@@ -61,7 +61,7 @@
     12: romanConverter,
     13: findDuplicates,
     14: quickSort,
-    15: noRepeatsPlease,
+    15: largestInt,
     20: exit
   };
 
