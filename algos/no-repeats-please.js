@@ -70,10 +70,11 @@ module.exports = function (str) {
     }
   }
   
+  str = 'aaabb';
   const arr = str.split("");
   let count = 0;
   
   permute(arr, []);
-
+  console.log("Total permutations without repeat is: ", count);
   return count;
 }
