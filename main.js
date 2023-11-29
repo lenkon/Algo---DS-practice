@@ -15,6 +15,7 @@
   const quickSort = require ('./algos/quickSort');
   const largestInt = require('./algos/largest-int-from-concatenated-ints');
   const noRepeatsPlease = require('./algos/no-repeats-please');
+  const gcd = require('./algos/greatest-common-divisor');
   
   const rl = readline.createInterface({
     input: process.stdin,
@@ -43,7 +44,8 @@
     console.log("13 - Find Duplicate numbers");
     console.log("14 - Quick sort a number array");
     console.log("15 - Largest integer from concatenated integers");
-    console.log("16 - No repeat please")
+    console.log("16 - No repeat please");
+    console.log("17 - Greatest common divisor");
     console.log('20 - Exit');
   }
 
@@ -64,6 +66,7 @@
     14: quickSort,
     15: largestInt,
     16: noRepeatsPlease,
+    17: gcd,
     20: exit
   };
 
