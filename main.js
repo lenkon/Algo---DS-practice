@@ -16,6 +16,7 @@
   const largestInt = require('./algos/largest-int-from-concatenated-ints');
   const noRepeatsPlease = require('./algos/no-repeats-please');
   const gcd = require('./algos/greatest-common-divisor');
+  const diffOfTwoArray = require('./algos/diff-two-arrays');
   
   const rl = readline.createInterface({
     input: process.stdin,
@@ -46,6 +47,7 @@
     console.log("15 - Largest integer from concatenated integers");
     console.log("16 - No repeat please");
     console.log("17 - Greatest common divisor");
+    console.log("18 - Difference of two arrays");
     console.log('20 - Exit');
   }
 
@@ -67,6 +69,7 @@
     15: largestInt,
     16: noRepeatsPlease,
     17: gcd,
+    18: diffOfTwoArray,
     20: exit
   };
 
