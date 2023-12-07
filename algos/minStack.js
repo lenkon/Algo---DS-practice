@@ -41,6 +41,24 @@ class Stack {
     return;
   }
     
+  pop() {
+    // your code here
+    if (this.top === null) 
+      return;
+    
+    if (this.top.value < this.minimum) {
+      let returnValue = this.minimum;
+      this.minimum = 2 * this.minimum - this.top.value;
+
+      let current = this.top;
+      this.top = this.top.next_node;      
+      return returnValue;      
+    }
+
+    let current = this.top;
+    this.top = this.top.next_node;
+    return current.value;
+  }
 }
 
 
