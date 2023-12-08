@@ -59,6 +59,10 @@ class Stack {
     this.top = this.top.next_node;
     return current.value;
   }
+
+  min() {    
+    return this.minimum;
+  }
 }
 
 
