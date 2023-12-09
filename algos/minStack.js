@@ -64,6 +64,11 @@ class Stack {
     return this.minimum;
   }
 }
+const stack = new Stack();
+stack.push(3);
+stack.push(5);
+stack.push(2);
+stack.push(8);
 
-
-module.exports = Stack
+const min = stack.min();
+module.exports = min;
