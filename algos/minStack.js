@@ -60,7 +60,8 @@ class Stack {
     return current.value;
   }
 
-  min() {    
+  min() { 
+    console.log('Minimum Value: ', this.minimum);
     return this.minimum;
   }
 }
