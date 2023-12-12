@@ -17,7 +17,7 @@
   const noRepeatsPlease = require('./algos/no-repeats-please');
   const gcd = require('./algos/greatest-common-divisor');
   const diffOfTwoArray = require('./algos/diff-two-arrays');
-  const minStack = require('./algos/minStack');
+  const Stack  = require('./algos/minStack');
   
   const rl = readline.createInterface({
     input: process.stdin,
@@ -72,7 +72,14 @@
     16: noRepeatsPlease,
     17: gcd,
     18: diffOfTwoArray,
-    19: minStack,
+    19: () => {
+      const stack = new Stack();
+      stack.push(3);
+      stack.push(5);
+      stack.push(2);
+      stack.push(8);
+      stack.min();
+    },
     20: exit
   };
 
