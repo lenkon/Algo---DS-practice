@@ -18,6 +18,7 @@
   const gcd = require('./algos/greatest-common-divisor');
   const diffOfTwoArray = require('./algos/diff-two-arrays');
   const Stack  = require('./algos/minStack');
+  const palindromeChecker = require('./algos/palindrome-checker')
   
   const rl = readline.createInterface({
     input: process.stdin,
@@ -50,7 +51,8 @@
     console.log("17 - Greatest common divisor");
     console.log("18 - Difference of two arrays");
     console.log("19 - Minimum stack in a stack");
-    console.log('20 - Exit');
+    console.log("20 - Palindrome checker");
+    console.log('25- Exit');
   }
 
   const OPTIONS = {
@@ -80,7 +82,8 @@
       stack.push(8);
       stack.min();
     },
-    20: exit
+    20: palindromeChecker;
+    25: exit
   };
 
   Object.freeze(OPTIONS);
