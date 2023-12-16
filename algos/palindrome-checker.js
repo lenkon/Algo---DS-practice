@@ -7,6 +7,9 @@ module.exports = function (str) {
   // }
   // return false;
 
+  let flag;
+  str = "race car";
+
   let input = str.replace(/[\W_]/g, "").toLowerCase();
   let inputString = input.split("");
   let mid = inputString.length / 2;
@@ -15,12 +18,18 @@ module.exports = function (str) {
     inputString[i], inputString[j] = inputString[j], inputString[i];
   }
   
-  console.log("input: ", input);
-  console.log("inputString: ", inputString);
+  // console.log("input: ", input);
+  // console.log("inputString: ", inputString);
   inputString = inputString.reverse().join("");
-  console.log("inputString -- string: ", inputString);
+  // console.log("inputString -- string: ", inputString);
   if (input === inputString) {
-    return true;
+    // return true;
+    flag = true;
   }
-  return false;
+  // return false;
+  flag = false;
+  if (flag) console.log("Is Palindrome");
+  else console.log("Not Palindrome");
+  return;
 }
+

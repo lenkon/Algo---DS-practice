@@ -82,7 +82,7 @@
       stack.push(8);
       stack.min();
     },
-    20: palindromeChecker;
+    20: palindromeChecker,
     25: exit
   };
 
